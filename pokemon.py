@@ -6,7 +6,7 @@ os.system('clear')
 
 while True:
 
-  ndex = int(input("Ndex: "))
+  ndex = int(input("Ndex  : "))
 
   page = int(ndex / 9)
   slot = ndex % 9
@@ -16,8 +16,15 @@ while True:
   else:
     page = page + 1
 
-  print(f'Page: {page}')
-  print(f'Slot: {slot}')
+  binder = 1
+
+  if (page > 100):
+    binder = 2
+    page -= 100
+
+  print(f'Binder: {binder}')
+  print(f'Page  : {page}')
+  print(f'Slot  : {slot}')
   print()
-    
+
 
